@@ -1,17 +1,9 @@
 import "./styles.css";
 
-type ProductCategoryProps = {
-  category: string[];
-};
-
-export default function ProductCategory({ category }: ProductCategoryProps) {
+export default function ProductCategory({ categorie }: { categorie: string }) {
   return (
-    <div className="dsc-category-container">
-      {category.map((cat, index) => (
-        <span key={index} className="dsc-category">
-          {cat}
-        </span>
-      ))}
+    <div>
+      <span>{categorie}</span>
     </div>
   );
 }
